@@ -17,7 +17,7 @@ $image = get_field('background_image', 'option');
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-
+<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 <?php wp_head();?>
 </head>
 
@@ -43,12 +43,11 @@ if ($description || is_customize_preview()): ?>
 endif;?>
 		</div>
 		</div><!-- .site-branding -->
-
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'medusa');?></button>
 			<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu'));?>
 
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
-	
+
 	<div id="content" class="site-content">
