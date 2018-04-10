@@ -60,8 +60,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 and comment the line "@import "bootsrap/bootstrap"".
 - To prevent conflict, comment the line "" in function.php
 --------------------------------------------------------------*/
-@import "bootstrap/bootstrap";
-//@import "bulma/bulma"
+//@import "bootstrap/bootstrap";
+@import "bulma-0.6.2/bulma";
 
 /*--------------------------------------------------------------
 # Normalize
@@ -122,3 +122,7 @@ and comment the line "@import "bootsrap/bootstrap"".
 # Media
 --------------------------------------------------------------*/
 @import "media/media";
+
+
+@import "layout/_header.scss";
+@import "layout/front-page.scss";

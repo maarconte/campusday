@@ -146,3 +146,49 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+// OPTIONS 
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page(array(
+		'page_title' 	=> 'Campus Day',
+		'menu_title'	=> 'Campus Day',
+		'menu_slug' 	=> 'theme-general-settings',
+		'capability'	=> 'edit_posts',
+		'icon_url' 		=> 'dashicons-desktop',
+		'redirect'		=> false
+	));
+	
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Header',
+		'menu_title'	=> 'Header',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'About',
+		'menu_title'	=> 'About',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Events',
+		'menu_title'	=> 'Events',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Partenaires',
+		'menu_title'	=> 'Partenaires',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Contact',
+		'menu_title'	=> 'Contact',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	acf_add_options_sub_page(array(
+		'page_title' 	=> 'Footer',
+		'menu_title'	=> 'Footer',
+		'parent_slug'	=> 'theme-general-settings',
+	));
+	
+}
