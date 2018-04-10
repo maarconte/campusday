@@ -1,4 +1,9 @@
-$font__main: sans-serif;
+@font-face {
+    font-family: SoleilRegular;
+    src: url(./fonts/Soleil-Regular.otf);
+}
+
+$font__main: SoleilRegular;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;

@@ -43,6 +43,9 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
+@font-face {
+  font-family: SoleilRegular;
+  src: url(./fonts/Soleil-Regular.otf); }
 /*--------------------------------------------------------------
 # Frameworks
 - To activate Bulma, uncomment the line "@import "bulma/bulma"" 
@@ -6662,7 +6665,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: SoleilRegular;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
