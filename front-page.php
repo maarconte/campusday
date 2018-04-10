@@ -27,7 +27,7 @@ get_header();?>
     <?php if ($about_text): ?>
         <section id="about">
         <?php if ($about_title): ?>
-            <h2 class="title is-2"><?php echo $about_title ?></h2>
+            <h2 class="title section-title is-2"><?php echo $about_title ?></h2>
         <?php endif;?>
             <div class="columns">
                 <div class=" column is-6">
@@ -44,13 +44,13 @@ get_header();?>
     <!-- EVENTS -->
         <section id="events">
         <?php if ($events_title): ?>
-            <h2 class="title is-2"><?php echo $events_title ?></h2>
+            <h2 class="title section-title is-2"><?php echo $events_title ?></h2>
         <?php endif;?>
         </section>
     <!-- PARTENAIRES -->
         <section id="partenaires">
         <?php if ($partenaires_title): ?>
-            <h2 class="title is-2"><?php echo $partenaires_title ?></h2>
+            <h2 class="title section-title is-2"><?php echo $partenaires_title ?></h2>
         <?php endif;?>
 
        <?php if( $partnaires_logos ): ?>

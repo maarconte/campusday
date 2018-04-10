@@ -46,6 +46,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @font-face {
   font-family: SoleilRegular;
   src: url(./fonts/Soleil-Regular.otf); }
+@font-face {
+  font-family: SoleilLight;
+  src: url(./fonts/Soleil-Light.otf);
+  font-weight: 300; }
+@font-face {
+  font-family: SoleilBold;
+  src: url(./fonts/Soleil-Bold.otf);
+  font-weight: 700; }
 /*--------------------------------------------------------------
 # Frameworks
 - To activate Bulma, uncomment the line "@import "bulma/bulma"" 
@@ -6664,14 +6672,15 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
-  font-family: SoleilRegular;
+  color: #1f1f1f;
+  font-family: SoleilLight;
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
 
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  font-family: SoleilBold; }
 
 p {
   margin-bottom: 1.5em; }
@@ -7167,6 +7176,20 @@ object {
 
 section {
   padding: 20px; }
+  section .section-title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 2rem !important; }
+    section .section-title:before {
+      display: block;
+      position: absolute;
+      bottom: -5px;
+      left: calc(50% - 25px);
+      box-sizing: border-box;
+      content: "";
+      height: 3px;
+      width: 50px;
+      background-color: #bada55; }
 
 /*=============================================
 =            About                            =
@@ -7179,6 +7202,7 @@ section {
 =            Partenaires                      =
 =============================================*/
 .list-logos {
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
 
 /*=====  End of Partenaires            ======*/
