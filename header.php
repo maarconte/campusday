@@ -16,6 +16,7 @@ $image = get_field('background_image', 'option');
 <meta charset="<?php bloginfo('charset');?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 <?php wp_head();?>
 </head>
